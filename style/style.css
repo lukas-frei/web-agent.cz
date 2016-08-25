@@ -1,0 +1,336 @@
+/* ------------ basic setup ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ------------ colors ------------- */
+/* ------------ fonts ------------- */
+body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 180%;
+  font-family: "Merriweather", serif;
+  color: #2D2C2A;
+}
+
+h1 {
+  font-size: 43px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+/* ------------ buttons ------------- */
+a:link,
+a:visited {
+  color: #4292B8;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:link:hover, a:link:active,
+a:visited:hover,
+a:visited:active {
+  color: #FBB533;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: #2D2C2A;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FBB533;
+  padding: 12px 40px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4);
+  border: 2px solid #FBB533;
+  border-radius: 4px;
+}
+
+.btn:link:hover, .btn:link :active,
+.btn:visited:hover,
+.btn:visited :active {
+  color: #2D2C2A;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  display: inline-block;
+  color: #2D2C2A;
+  font-weight: 400;
+  font-style: normal;
+  padding: 12px 40px;
+  border: 2px solid #2D2C2A;
+  border-radius: 4px;
+}
+
+.btn-ghost:link:hover, .btn-ghost:link :active,
+.btn-ghost:visited:hover,
+.btn-ghost:visited :active {
+  border: 2px solid #FBB533;
+}
+
+/* ------------ nav ------------- */
+.logo {
+  margin: 50px 0 30px 0;
+}
+
+.logo-title {
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+nav {
+  background-image: url("../images/nav-background.svg");
+  background-size: cover;
+  position: fixed;
+  width: 200px;
+  height: 700px;
+  margin: -20px 0 0 70px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  color: #E0E0E0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a:link,
+nav a:visited {
+  color: #E0E0E0;
+  font-weight: 300;
+}
+
+nav li, nav .logo {
+  padding: 5px 40px;
+}
+
+.active:link,
+.active:visited {
+  color: #FBB533;
+  transition: .5s all ease-out;
+}
+
+/* ------------ uvod ------------- */
+#uvod {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 66%, #FFF9F0), url("../images/hero-foto.jpg");
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title {
+  font-style: italic;
+  float: left;
+  margin: 250px 0 0 350px;
+}
+
+.title h3 {
+  padding-left: 25px;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.title .btn {
+  margin: 10px 0 0 25px;
+}
+
+.hero-foto {
+  float: right;
+  width: 300px;
+  margin-right: 150px;
+}
+
+/* ------------ sluzby ------------- */
+#sluzby {
+  background-color: #FFF9F0;
+  padding: 70px 0 60px 330px;
+  overflow: hidden;
+}
+
+.sluzby-p {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.sluzby-icons {
+  width: 120px;
+  float: left;
+  margin-top: 30px;
+}
+
+.sluzby-text {
+  width: 80%;
+  float: left;
+  padding: 20px 0 20px 40px;
+}
+
+.sluzby-text a {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.sluzby-text p {
+  max-width: 500px;
+}
+
+/* ------------ projekty ------------- */
+#projekty {
+  background-color: #FFD08A;
+  padding: 70px 0 30px 330px;
+  overflow: hidden;
+}
+
+.reference {
+  margin: 30px 0 60px 0;
+}
+
+.reference h2 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.reference h3 {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+}
+
+.reference img {
+  width: 500px;
+  float: left;
+}
+
+.reference-popis {
+  max-width: 360px;
+  float: left;
+  padding: 0 30px 70px 50px;
+}
+
+.reference-popis p:first-of-type {
+  padding-bottom: 10px;
+}
+
+.reference-popis a {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+/* ------------ cenik ------------- */
+#cenik {
+  background-color: #FFF9F0;
+  padding: 70px 0 100px 330px;
+  overflow: hidden;
+}
+
+#cenik p {
+  max-width: 670px;
+}
+
+#cenik .btn {
+  margin-right: 20px;
+}
+
+.polozka {
+  max-width: 590px;
+  border-left: 2px solid #FBB533;
+}
+
+.polozka p {
+  padding: 7px 10px;
+  display: inline-block;
+}
+
+.polozka p:first-of-type {
+  font-weight: 400;
+  font-size: 18px;
+  float: left;
+}
+
+.polozka p:nth-of-type(2) {
+  font-weight: 400;
+  font-size: 18px;
+  float: right;
+  padding-right: 250px;
+}
+
+.polozka hr {
+  width: 350px;
+  border: 1px solid #FBB533;
+}
+
+hr {
+  width: 540px;
+  border: 1px solid #FBB533;
+}
+
+.podpora {
+  margin-top: 40px;
+}
+
+#konzultace {
+  margin-top: 40px;
+}
+
+.konzultace-p {
+  padding: 10px 0 30px 0;
+}
+
+.konzultace-benefity {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.konzultace-benefity li {
+  display: inline-block;
+  padding: 0 0 10px 10px;
+}
+
+.konzultace-benefity img {
+  vertical-align: middle;
+}
+
+/* ------------ footer ------------- */
+footer {
+  background-color: #2D2C2A;
+  color: #E0E0E0;
+  text-align: center;
+  padding: 70px 0;
+}

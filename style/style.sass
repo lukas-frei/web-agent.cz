@@ -1,0 +1,274 @@
+/* ------------ basic setup ------------- */
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.clearfix
+    &:before
+        content: ""
+        display: table
+        clear: both
+
+/* ------------ colors ------------- */
+
+$primary: #2D2C2A
+$highlight: #FBB533
+$background: #FFF9F0
+$background2: #FFD08A
+$light: #E0E0E0
+$link: #4292B8
+
+/* ------------ fonts ------------- */
+
+$font-stack: "Merriweather", serif
+
+body
+  font-size: 16px
+  font-weight: 300
+  line-height: 180%
+  font-family: $font-stack
+  color: $primary
+
+h1
+  font-size: 43px
+  margin: 20px 0
+
+h2
+  font-size: 30px
+  margin: 20px 0
+
+h3
+  font-size: 24px
+  font-style: italic
+  margin: 10px 0
+
+h4
+  font-size: 24px
+  margin: 10px 0
+
+h1, h2, h3, h4
+  font-weight: 400
+
+
+/* ------------ buttons ------------- */
+
+a:link,
+a:visited
+  color: $link
+  font-weight: 400
+  text-decoration: none
+  &:hover, &:active
+    color: $highlight
+
+.btn:link,
+.btn:visited
+  display: inline-block
+  color: $primary
+  font-weight: 400
+  font-style: normal
+  background-color: $highlight
+  padding: 12px 40px
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.4)
+  border: 2px solid $highlight
+  border-radius: 4px
+
+  &:hover,:active
+    color: $primary
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.6)
+
+.btn-ghost:link,
+.btn-ghost:visited
+  display: inline-block
+  color: $primary
+  font-weight: 400
+  font-style: normal
+  padding: 12px 40px
+  border: 2px solid $primary
+  border-radius: 4px
+
+  &:hover,:active
+    border: 2px solid $highlight
+
+
+
+/* ------------ nav ------------- */
+
+.logo
+  margin: 50px 0 30px 0
+
+.logo-title
+  padding: 10px 0
+  font-size: 18px
+
+nav
+  background-image: url("../images/nav-background.svg")
+  background-size: cover
+  position: fixed
+  width: 200px
+  height: 700px
+  margin: -20px 0 0 70px
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  text-align: right
+  color: $light
+  ul
+    list-style: none
+  a:link,
+  a:visited
+    color: $light
+    font-weight: 300
+  li,.logo
+    padding: 5px 40px
+
+.active:link,
+.active:visited
+  color: $highlight
+  transition: .5s all ease-out
+
+/* ------------ uvod ------------- */
+
+#uvod
+  height: 100vh
+  overflow: hidden
+  background-image: linear-gradient(rgba(255,255,255,0) 66%, $background), url("../images/hero-foto.jpg")
+  background-position: 80%
+  background-repeat: no-repeat
+  background-size: contain
+
+.title
+  font-style: italic
+  float: left
+  margin: 250px 0 0 350px
+  h3
+    padding-left: 25px
+    font-weight: 300
+    line-height: 160%
+  .btn
+    margin: 10px 0 0 25px
+
+.hero-foto
+  float: right
+  width: 300px
+  margin-right: 150px
+
+
+/* ------------ sluzby ------------- */
+
+#sluzby
+  background-color: $background
+  padding: 70px 0 60px 330px
+  overflow: hidden
+
+.sluzby-p
+  max-width: 700px
+  margin-bottom: 30px
+
+.sluzby-icons
+  width: 120px
+  float: left
+  margin-top: 30px
+
+.sluzby-text
+  width: 80%
+  float: left
+  padding: 20px 0 20px 40px
+  a
+    display: inline-block
+    padding-top: 10px
+
+.sluzby-text p
+  max-width: 500px
+
+
+/* ------------ projekty ------------- */
+
+#projekty
+  background-color: $background2
+  padding: 70px 0 30px 330px
+  overflow: hidden
+
+.reference
+  margin: 30px 0 60px 0
+  h2
+    font-style: italic
+    margin-bottom: 10px
+  h3
+    margin: 0 0 15px 0
+    font-size: 20px
+  img
+    width: 500px
+    float: left
+
+.reference-popis
+  max-width: 360px
+  float: left
+  padding: 0 30px 70px 50px
+  p:first-of-type
+    padding-bottom: 10px
+  a
+    display: inline-block
+    padding-bottom: 15px
+
+
+/* ------------ cenik ------------- */
+
+#cenik
+  background-color: $background
+  padding: 70px 0 100px 330px
+  overflow: hidden
+  p
+    max-width: 670px
+  .btn
+    margin-right: 20px
+
+.polozka
+  max-width: 590px
+  border-left: 2px solid $highlight
+  p
+    padding: 7px 10px
+    display: inline-block
+  p:first-of-type
+    font-weight: 400
+    font-size: 18px
+    float: left
+  p:nth-of-type(2)
+    font-weight: 400
+    font-size: 18px
+    float: right
+    padding-right: 250px
+  hr
+    width: 350px
+    border: 1px solid $highlight
+
+hr
+  width: 540px
+  border: 1px solid $highlight
+
+.podpora
+  margin-top: 40px
+
+#konzultace
+  margin-top: 40px
+
+.konzultace-p
+  padding: 10px 0 30px 0
+
+.konzultace-benefity
+  list-style: none
+  margin-bottom: 50px
+  li
+    display: inline-block
+    padding: 0 0 10px 10px
+  img
+    vertical-align: middle
+
+/* ------------ footer ------------- */
+
+footer
+  background-color: $primary
+  color: $light
+  text-align: center
+  padding: 70px 0
