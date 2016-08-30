@@ -33,58 +33,125 @@
     <nav>
       <figure class="logo">
         <img class="logo-img" src="images/logo-white.svg" alt="" title="">
-        <p class="logo-title">Lukáš Frei<br>Web Design</p>
+        <p class="logo-title">Lukáš Frei<br><span>Web Design<span></p>
       </figure>
-      <ul>
+      <ul id="nav-index">
         <li><a class="active" href="#uvod">Úvod</a></li>
         <li><a href="#sluzby">Služby</a></li>
         <li><a href="#projekty">Projekty</a></li>
         <li><a href="#cenik">Ceník</a></li>
         <br>
-        <li><a href="kontakt.html">O mně</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="kontakt.html#omne">O mně</a></li>
+        <li><a href="kontakt.html#hero-foto2">Kontakt</a></li>
       </ul>
     </nav>
 
     <div class="title">
       <h1>“Váš web agent”</h1>
       <h3>Pomáhám podnikavcům</br>k úspěchu na internetu</h3>
-      <a class="btn" href="#sluzby">Jak na web</a>
+      <a class="btn btn-uvod" href="#sluzby">Jak na web</a>
     </div>
   </header>
 
   <section id="sluzby">
     <h1>Webová prezentace</h1>
-    <h3>Jako efektivní marketingový nástroj</h3>
-    <p class="sluzby-p">Provedu vás celým procesem propagace na internetu. Budu naslouchat, zajímat se o vaše podnikání. Následně dodám účelné webové stránky, které vám přivedou ty správné lidi.</p>
+    <div class="nav-sec">
+      <a href="#" class="btn-uvod"><svg viewBox="0 0 512 512"><path fill="#4292B8" d="M208,448l0,-128l96,0l0,128l97.6,0l0,-192l62.4,0l-208,-192l-208,192l62.4,0l0,192l97.6,0Z"></svg>Služby ></a>
+      <a href="#todo" class="btn-spoluprace">Spolupráce ></a>
+      <a href="#todo" class="btn-tech">Technologie ></a>
+      <a href="#todo" class="btn-navstevnost">Návštěvnost ></a>
+      <a href="#todo" class="btn-sprava">Správa ></a>
+    </div>
+    <div class="box" id="sluzby-uvod">
+      <h3>Jako efektivní marketingový nástroj</h3>
+      <p class="sluzby-p">Provedu vás celým procesem propagace na internetu. Budu naslouchat, zajímat se o vaše podnikání. Následně dodám účelné webové stránky, které vám přivedou ty správné lidi.</p>
 
-    <img class="sluzby-icons" src="images/icon1.svg">
-    <div class="sluzby-text">
-      <h4>1. Osobitý web</h4>
-      <p>Na navrhnu pro vás originální prezentaci, která dokáže zaujmout. Poradím jak získat obsah pro online návštěvníky.</p>
-      <a href="#test">Průběh spolupráce</a>
+      <img class="sluzby-icons" src="images/sluzby-icon1.svg">
+      <div class="sluzby-text">
+        <h4>1. Osobitý web</h4>
+        <p>Na navrhnu pro vás originální prezentaci, která dokáže zaujmout. Poradím jak získat obsah pro online návštěvníky.</p>
+        <a href="#todo" class="btn-spoluprace">Průběh spolupráce</a>
+      </div>
+
+      <img class="sluzby-icons" src="images/sluzby-icon2.svg">
+      <div class="sluzby-text">
+        <h4>2. Technické zpracování</h4>
+        <p>Postarám se vám kompletně o technickou stránku věci. Nezapomenu ani na přizpůsobení webu pro mobilní telefony.</p>
+        <a href="#todo" class="btn-tech">Používané technologie</a>
+      </div>
+
+      <img class="sluzby-icons" src="images/sluzby-icon3.svg">
+      <div class="sluzby-text">
+        <h4>3. Zajištění návštěvnosti</h4>
+        <p>Zařídíme vhodnou online propagaci a případně doporučím marketingové specialisty.</p>
+        <a href="#todo" class="btn-navstevnost">Jak zviditelníme web</a>
+      </div>
+
+      <img class="sluzby-icons" src="images/sluzby-icon4.svg">
+      <div class="sluzby-text">
+        <h4>4. Podpora a rozvoj</h4>
+        <p>O nový web se vám dokážu postarat. Nadále jsem vám k dispozici pro úpravy a rozvoj.</p>
+        <a href="#todo" class="btn-sprava">Správa webu</a>
+      </div>
     </div>
 
-    <img class="sluzby-icons" src="images/icon2.svg">
-    <div class="sluzby-text">
-      <h4>2. Technické zpracování</h4>
-      <p>Postarám se vám kompletně o technickou stránku věci. Nezapomenu ani na přizpůsobení webu pro mobilní telefony.</p>
-      <a href="#test">Používané technologie</a>
+    <div class="box" id="sluzby-spoluprace">
+      <div class="box-obsah">
+        <p>1. Konzultace</p>
+        <p>Nejdříve si probereme vaše plány a představy. Při tom se budu hodně ptát a zajímat o vaše podnikání.</p>
+        <p>2. Specifikace</p>
+        <p>Zpracuji vám nabídku nacenění a podrobnou specifikaci zadání.</p>
+        <p>3. Návrh </p>
+        <p>Web navrhnu drátěnou metodou. V této fázi se domluvíme, jaký kokrétní obsah budeme prezentovat.</p>
+      </div>
+      <div class="box-obsah">
+        <p>4. Prototyp</p>
+        <p>Připravím vám vizální prototyp, který doladíme k vaší spokojenosti</p>
+        <p>5. Spuštění</p>
+        <p>Webové stránky zrealizuji a vypustím na internet. Případně vám předám online nástroje.</p>
+        <p>6. Správa a podpora</p>
+        <p>O nový web se vám postarám. Nadále jsem vám k dispozici pro úpravy a rozvoj.</p>
+      </div>
     </div>
 
-    <img class="sluzby-icons" src="images/icon3.svg">
-    <div class="sluzby-text">
-      <h4>3. Zajištění návštěvnosti</h4>
-      <p>Zařídíme vohodnou online propagaci a případně doporučím marketingové specialisty.</p>
-      <a href="#">Jak zviditelníme web</a>
+    <div class="box" id="sluzby-tech">
+      <p>Webové stránky stavím na jednoduchých technologii. Vzniklé statické stránky jsou rychlé v načítání, bezpečné a všeobecně kompatibilní. Používám poslední webové standarty CSS3, HTML5 a JavaScript.</p>
+      <p>Pro podporu blogů a různých dalších dynamických částí online prezentace využívám oblíbený generátor statických stran Jekyllrb.com. Na této technologii staví snad ten nejednoduší redakční systém CloudCannon.com. S ním zvládnete úpravy obsahu webu rychle a hravě .</p>
+      <h5>Změna kontaktních údajů za 5 sekund:</h5>
+      <video width="800" height="auto" controls>
+          <source src="images/editor.mp4" type="video/mp4">
+      </video>
     </div>
 
-    <img class="sluzby-icons" src="images/icon4.svg">
-    <div class="sluzby-text">
-      <h4>4. Podpora a rozvoj</h4>
-      <p>O nový web se vám dokážu postarat. Nadále jsem vám k dispozici pro úpravy a rozvoj.</p>
-      <a href="#test">Správa webu</a>
+    <div class="box" id="sluzby-navstevnost">
+      <p>Nejdříve dáme dohromady vstupní analýzu klíčových slov a na jejím základě provedu optimalizaci pro vyhledávače - SEO. Také vás seznámím s tím, jak získávat zpětné odkazy. Pokud by jste chtěli do vašeho online mixu zapojit placenou proklikovou reklamu (PPC) a nebo reklamu na Facebooku, mohu doporučit prověřené specialisty.</p>
+      <p>Jednou ze velkých výhod internetové propagace je možnost detailního měření návštěvnosti. Na základně poznatků od návštěvníků lze zlepšit online prezentaci a internetové směřování. Za tímto účelem využívam nástroj Google Analythics. Statistiky návštěvnosti vám mohu zpřístupnit přes sestavený panel návštěvnosti. Pro ty, co chtějí mít od svých návštěvníků co nejlepší zpětnou vazbu, vyhodnocuji úspěšnost web pravidelně.</p>
+      <img src="images/analytics.png">
     </div>
+
+    <div class="box" id="sluzby-sprava">
+      <p>Po dokončení webových stránek vás nenechám na pospas online světu. Podle vaších potřeb na úpravy a rozvoj vybereme vhodné řešení pro správu webu. Následující balíčky jsou typické možnosti, ale rád vám vyjdu vtříct v individuální domluvě.</p>
+
+      <div class="polozka2">
+        <h5>Obsah se nebude měnit často</h5>
+        <p>Obsahuje: webový hosting a podpora na telefonu</p>
+        <hr>
+        <p>Provoz webu zdarma, změny obsahu provádním v sazbě <b>500 kč / hod práce</b></p>
+      </div>
+      <div class="polozka2">
+        <h5>Web chci mít ve vlastích rukách</h5>
+        <p>Obsahuje: webový hosting, jednoduchý editor obsahu, pro vás sestavený panel návštěvnosti webu, konzultace ovládání nástrojů a podpora na telefonu</p>
+        <hr>
+        <p>Provoz webu vyjde na <b>1500 Kč / rok</b>, změny obsahu zvládnete hravě sami</p>
+      </div>
+      <div class="polozka2">
+        <h5>Potřebuji online parťáka</h5>
+        <p>Obsahuje: webový hosting, předplacená práce pro změny a rozvoj, pravidelné vyhodnocování návštěvnosti webu, možnost průběžné konzultace a podpora na telefonu</p>
+        <hr>
+        <p>O váš web se postaram za <b>1 100 Kč / měsíc</b></p>
+      </div>
+    </div>
+
   </section>
 
   <section id="projekty">
@@ -112,26 +179,15 @@
     <div class="reference-popis">
       <p>“Nové stránky jsou přehledné a zákazníci se v nich dobře orientují. S kvalitou práce jsem spokojená.”</p>
       <p style="font-weight:bold;">Magdalena Ulvrová</p>
-      <a href="#test">www.cistirna-plzen.cz</a>
+      <a href="#">www.cistirna-plzen.cz</a>
       <a class="btn-ghost" href="#test">Detail</a>
     </div>
 
-    <div class="reference clearfix">
-      <h2>S&amp;M Profis s.r.o</h2>
-      <h3>Čistírna oděvů</h3>
-      <img src="images/ref1.jpg">
-    </div>
-    <div class="reference-popis">
-      <p>“Nové stránky jsou přehledné a zákazníci se v nich dobře orientují. S kvalitou práce jsem spokojená.”</p>
-      <p style="font-weight:bold;">Magdalena Ulvrová</p>
-      <a href="#test">www.cistirna-plzen.cz</a>
-      <a class="btn-ghost" href="#test">Detail</a>
-    </div>
   </section>
 
   <section id="cenik">
     <h1>Kolik mě to bude stát?</h1>
-    <p class="sluzby-p">Přesnou cenovou nabídku za tvorbu webových stránek vám dokážu vytvořit až na základě konkrétního zadání, ale pro představu mohu nabídnout následující orientační ceník. Jestli máte zájem o spočítání nabídky, neváhejte mě <a href="#kontakt">kontaktovat</a>.<p>
+    <p class="sluzby-c">Přesnou cenovou nabídku za tvorbu webových stránek vám dokážu vytvořit až na základě konkrétního zadání, ale pro představu mohu nabídnout následující orientační ceník. Jestli máte zájem o spočítání nabídky, neváhejte mě <a href="kontakt.html#hero-foto2">kontaktovat</a>.<p>
 
     <div class="polozka">
       <p>Webová vizitka</p>
@@ -148,7 +204,7 @@
     </div>
 
     <h4 class="podpora">Podpora a správa webu</h4>
-    <p>Stejně jak vy, se rozvíjí i vaše online prezentace. Protože každý má odlišné nároky na četnost a rozsah úprav, připravil jsem pro vás různé způsoby řešení <a href="#sprava">správy webu</a>.<p>
+    <p>Stejně jak vy, se rozvíjí i vaše online prezentace. Protože každý má odlišné nároky na četnost a rozsah úprav, připravil jsem pro vás různé způsoby řešení <a class="btn-sprava" href="#">správy webu</a>.<p>
 
     <h4 id="konzultace">Vkročte do online světa tou správnou nohou</h4>
     <hr>
@@ -160,8 +216,8 @@
       <img src="images/arrow.svg"><li>doporučím nejvhodnější řešení právě pro vaše potřeby</li><br>
     </ul>
 
-    <a class="btn" href="#kontakt">Chci se sejít</a>
-    <a class="btn-ghost" href="#omne">Více o mně</a>
+    <a class="btn" href="kontakt.html#hero-foto2">Chci se sejít</a>
+    <a class="btn-ghost" href="kontakt.html#omne">Více o mně</a>
   </section>
 
   <footer>

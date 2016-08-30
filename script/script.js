@@ -1,13 +1,17 @@
 $(document).ready(function(){
 
   // Nav to scroll
-  $("nav a").click(function(evn){
+  $("#nav-index a:lt(4)").click(function(evn){
+      evn.preventDefault();
+      $('html,body').scrollTo(this.hash, this.hash);
+  });
+  $("#nav-kontakt a:gt(3)").click(function(evn){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
 
   // CTA to scroll
-  $(".btn").click(function(evn){
+  $(".btn-uvod").click(function(evn){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
@@ -42,5 +46,65 @@ $(document).ready(function(){
 
   });
 
+  // nav-sec
+  $(".btn-uvod").click(function(evn){
+    evn.preventDefault();
+    $('.box').css("display", "none");
+    $('#sluzby-uvod').css("display", "block");
+    $('.nav-sec').css("display", "none");
+
+    $('.nav-sec > a').removeClass("active-sec");
+    $(".nav-sec > .btn-uvod").addClass("active-sec");
+
+    $('html,body').scrollTo('#sluzby')
+  });
+
+  $(".btn-spoluprace").click(function(evn){
+    evn.preventDefault();
+    $('.box').css("display", "none");
+    $('#sluzby-spoluprace').css("display", "block");
+    $('.nav-sec').css("display", "block");
+
+    $('.nav-sec > a').removeClass("active-sec");
+    $('.nav-sec > .btn-spoluprace').addClass("active-sec");
+
+    $('html,body').scrollTo('#sluzby')
+  });
+
+  $(".btn-tech").click(function(evn){
+    evn.preventDefault();
+    $('.box').css("display", "none");
+    $('#sluzby-tech').css("display", "block");
+    $('.nav-sec').css("display", "block");
+
+    $('.nav-sec > a').removeClass("active-sec");
+    $(".nav-sec > .btn-tech").addClass("active-sec");
+
+    $('html,body').scrollTo('#sluzby')
+  });
+
+  $(".btn-navstevnost").click(function(evn){
+    evn.preventDefault();
+    $('.box').css("display", "none");
+    $('#sluzby-navstevnost').css("display", "block");
+    $('.nav-sec').css("display", "block");
+
+    $('.nav-sec > a').removeClass("active-sec");
+    $(".nav-sec > .btn-navstevnost").addClass("active-sec");
+
+    $('html,body').scrollTo('#sluzby')
+  });
+
+  $(".btn-sprava").click(function(evn){
+    evn.preventDefault();
+    $('.box').css("display", "none");
+    $('#sluzby-sprava').css("display", "block");
+    $('.nav-sec').css("display", "block");
+
+    $('.nav-sec > a').removeClass("active-sec");
+    $(".nav-sec > .btn-sprava").addClass("active-sec");
+
+    $('html,body').scrollTo('#sluzby')
+  });
 
 });

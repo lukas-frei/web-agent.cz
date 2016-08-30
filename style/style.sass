@@ -5,6 +5,10 @@
   padding: 0
   box-sizing: border-box
 
+body
+  max-width: 1280px
+  margin: 0 auto
+
 .clearfix
     &:before
         content: ""
@@ -19,10 +23,14 @@ $background: #FFF9F0
 $background2: #FFD08A
 $light: #E0E0E0
 $link: #4292B8
+$link2: #375C73
 
 /* ------------ fonts ------------- */
 
 $font-stack: "Merriweather", serif
+
+h1, h2, h3, h4, h5
+  font-weight: 400
 
 body
   font-size: 16px
@@ -47,10 +55,10 @@ h3
 h4
   font-size: 24px
   margin: 10px 0
+  font-weight: 300
 
-h1, h2, h3, h4
-  font-weight: 400
-
+h5
+  font-size: 18px
 
 /* ------------ buttons ------------- */
 
@@ -60,7 +68,21 @@ a:visited
   font-weight: 400
   text-decoration: none
   &:hover, &:active
+    color: $link2
+    transition: .5s all ease-out
+
+nav a:link,
+nav a:visited
+  &:hover, &:active
     color: $highlight
+    transition: .5s all ease-out
+
+#kontakt a:link,
+#kontakt a:visited
+  color: $link2
+  &:hover, &:active
+    color: $primary
+    transition: .5s all ease-out
 
 .btn:link,
 .btn:visited
@@ -89,9 +111,16 @@ a:visited
   border-radius: 4px
 
   &:hover,:active
-    border: 2px solid $highlight
+    border: 2px solid $link2
+    transition: .5s all ease-out
 
+nav ul li a:hover,
+nav ul li a:active
+  color: $highlight
+  transition: .5s all ease-out
 
+.nav-sec a:link
+  transition: 0s all
 
 /* ------------ nav ------------- */
 
@@ -102,13 +131,16 @@ a:visited
   padding: 10px 0
   font-size: 18px
 
+nav span
+  font-size: 15px
+
 nav
   background-image: url("../images/nav-background.svg")
   background-size: cover
   position: fixed
   width: 200px
   height: 700px
-  margin: -20px 0 0 70px
+  margin: -25px 0 0 70px
   display: flex
   flex-direction: column
   align-items: flex-end
@@ -128,7 +160,14 @@ nav
   color: $highlight
   transition: .5s all ease-out
 
-/* ------------ uvod ------------- */
+.active-sec:link,
+.active-sec:visited
+  font-size: 24px
+
+
+/* ------------------------------------- */
+/* ------------ index.html ------------- */
+/* ------------------------------------- */
 
 #uvod
   height: 100vh
@@ -137,6 +176,10 @@ nav
   background-position: 80%
   background-repeat: no-repeat
   background-size: contain
+  background-attachment: fixed
+
+#uvod-nav
+  overflow: hidden
 
 .title
   font-style: italic
@@ -144,7 +187,6 @@ nav
   margin: 250px 0 0 350px
   h3
     padding-left: 25px
-    font-weight: 300
     line-height: 160%
   .btn
     margin: 10px 0 0 25px
@@ -161,9 +203,11 @@ nav
   background-color: $background
   padding: 70px 0 60px 330px
   overflow: hidden
+  h3
+    padding-bottom: 10px
 
 .sluzby-p
-  max-width: 700px
+  max-width: 600px
   margin-bottom: 30px
 
 .sluzby-icons
@@ -182,6 +226,74 @@ nav
 .sluzby-text p
   max-width: 500px
 
+
+/* ------------ sluzby-boxes ------------- */
+
+.nav-sec
+  display: none
+  width: 100%
+  padding: 10px 0 20px 0
+  svg
+    width: 20px
+    vertical-align: middle
+    margin-bottom: 5px
+    margin-right: 5px
+a:hover > svg *
+  fill: $highlight
+
+.nav-sec a
+  display: inline-block
+  padding-right: 15px
+
+
+#sluzby-spoluprace,
+#sluzby-tech,
+#sluzby-navstevnost,
+#sluzby-sprava
+  display: none
+
+
+#sluzby-spoluprace .box-obsah
+  max-width: 40%
+  float: left
+  padding-right: 5%
+
+#sluzby-spoluprace p:nth-child(odd)
+  font-weight: 400
+  padding: 10px 0 5px 0
+
+#sluzby-spoluprace p:nth-child(even)
+  padding-bottom: 20px
+
+#sluzby-tech p
+  padding: 10px 0
+  max-width: 800px
+#sluzby-tech h5
+  padding-top: 20px
+#sluzby-tech video
+  padding: 20px 0
+  max-width: 800px
+
+#sluzby-navstevnost p,
+#sluzby-navstevnost img
+  padding: 10px 0
+  max-width: 800px
+
+#sluzby-sprava p
+  padding: 10px 0
+  max-width: 800px
+
+.polozka2
+  margin: 30px 0 15px 0
+  max-width: 800px
+  border-left: 2px solid $highlight
+
+.polozka2 p,
+.polozka2 h5
+  margin-left: 10px
+
+.polozka2 p:first-of-type
+  font-style: italic
 
 /* ------------ projekty ------------- */
 
@@ -220,9 +332,12 @@ nav
   padding: 70px 0 100px 330px
   overflow: hidden
   p
-    max-width: 670px
+    max-width: 550px
   .btn
     margin-right: 20px
+
+.sluzby-c
+  padding-bottom: 40px
 
 .polozka
   max-width: 590px
@@ -248,17 +363,17 @@ hr
   border: 1px solid $highlight
 
 .podpora
-  margin-top: 40px
+  margin-top: 50px
 
 #konzultace
-  margin-top: 40px
+  margin-top: 60px
 
 .konzultace-p
-  padding: 10px 0 30px 0
+  padding: 10px 0 40px 0
 
 .konzultace-benefity
   list-style: none
-  margin-bottom: 50px
+  margin-bottom: 70px
   li
     display: inline-block
     padding: 0 0 10px 10px
@@ -272,3 +387,96 @@ footer
   color: $light
   text-align: center
   padding: 70px 0
+
+
+/* ------------------------------------- */
+/* ------------ kontakt.html ----------- */
+/* ------------------------------------- */
+
+
+/* ------------ o mne ----------- */
+
+#omne
+  padding: 70px 0 150px 330px
+  overflow: hidden
+  h2
+    margin: 0 0 30px 0
+  img
+    width: 450px
+    float: left
+  img:nth-of-type(2)
+    margin-top: -30px
+  img:nth-of-type(3)
+    margin-top: -30px
+
+.omne1
+  width: 380px
+  float: left
+  margin-left: 30px
+  padding: 10px 0
+
+.omne2
+  width: 380px
+  float: left
+  margin-right: 30px
+  padding: 20px 0
+  clear: left
+
+.omne3
+  width: 380px
+  float: left
+  margin-left: 30px
+  padding: 20px 0
+
+
+/* ------------ kontakt ----------- */
+
+#kontakt
+  margin-top: 40px
+  padding: 70px 0 60px 330px
+  overflow: hidden
+  background-color: #8FA1AE
+
+.kontakty
+  list-style: none
+  font-size: 18px
+  li
+    display: inline-block
+    padding: 10px 0 10px 10px
+  img
+    width: 30px
+    vertical-align: middle
+
+#hero-foto2
+  width: 400px
+  position: absolute
+  margin-top: -450px
+  margin-left: 450px
+
+.otazky
+  margin-top: 100px
+  h4
+    margin-bottom: 20px
+  div
+    width: 27%
+    float: left
+    margin-right: 5%
+    p:first-child
+      font-weight: 400
+      padding-bottom: 10px
+
+
+/* ------------ footer-kontakt----------- */
+
+footer
+  overflow: hidden
+
+.copy
+  text-align: left
+  padding: 110px 0 0 330px
+  position: absolute
+
+.info
+  float: right
+  text-align: right
+  padding-right: 50px
