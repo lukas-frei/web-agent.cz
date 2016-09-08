@@ -2,17 +2,39 @@
 
 <head>
 
+  <!-- meta -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Lukáš Frei - Web agent</title>
   <meta name="description" content="Lukáš Frei - Web design">
 
+  <!-- font -->
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- styles -->
   <link rel="stylesheet" type="text/css" href="style/normalize.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
-  <!--link rel="stylesheet" type="text/css" href="style/queries.css"-->
+  <link rel="stylesheet" type="text/css" href="style/queries.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!--meta name="google-site-verification" content="GqO1UtrOzL9mr5XpnggqMJ-B_O6GZig5PnlQuzDS-jM" />
   <script>
@@ -40,10 +62,9 @@
         <li><a href="#sluzby">Služby</a></li>
         <li><a href="#projekty">Projekty</a></li>
         <li><a href="#cenik">Ceník</a></li>
-        <br>
-        <li><a href="kontakt.html#omne">O mně</a></li>
-        <li><a href="kontakt.html#hero-foto2">Kontakt</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
+      <a id="mobile-menu" href="#footer">Menu</a>
     </nav>
 
     <div class="title">
@@ -56,7 +77,7 @@
   <section id="sluzby">
     <h1>Webová prezentace</h1>
     <div class="nav-sec">
-      <a href="#" class="btn-uvod"><svg viewBox="0 0 512 512"><path fill="#4292B8" d="M208,448l0,-128l96,0l0,128l97.6,0l0,-192l62.4,0l-208,-192l-208,192l62.4,0l0,192l97.6,0Z"></svg>Služby ></a>
+      <a href="#" class="btn-uvod"><svg viewBox="0 0 512 512"><path fill="#FBB533" d="M208,448l0,-128l96,0l0,128l97.6,0l0,-192l62.4,0l-208,-192l-208,192l62.4,0l0,192l97.6,0Z"></svg>Služby ></a>
       <a href="#todo" class="btn-spoluprace">Spolupráce ></a>
       <a href="#todo" class="btn-tech">Technologie ></a>
       <a href="#todo" class="btn-navstevnost">Návštěvnost ></a>
@@ -126,7 +147,8 @@
     <div class="box" id="sluzby-navstevnost">
       <p>Nejdříve dáme dohromady vstupní analýzu klíčových slov a na jejím základě provedu optimalizaci pro vyhledávače - SEO. Také vás seznámím s tím, jak získávat zpětné odkazy. Pokud by jste chtěli do vašeho online mixu zapojit placenou proklikovou reklamu (PPC) a nebo reklamu na Facebooku, mohu doporučit prověřené specialisty.</p>
       <p>Jednou ze velkých výhod internetové propagace je možnost detailního měření návštěvnosti. Na základně poznatků od návštěvníků lze zlepšit online prezentaci a internetové směřování. Za tímto účelem využívam nástroj Google Analythics. Statistiky návštěvnosti vám mohu zpřístupnit přes sestavený panel návštěvnosti. Pro ty, co chtějí mít od svých návštěvníků co nejlepší zpětnou vazbu, vyhodnocuji úspěšnost web pravidelně.</p>
-      <img src="images/analytics.png">
+      <h5>Příklad sestaveného panelu návštěvnosti:</h5>
+      <img src="images/analytics.jpg">
     </div>
 
     <div class="box" id="sluzby-sprava">
@@ -136,7 +158,7 @@
         <h5>Obsah se nebude měnit často</h5>
         <p>Obsahuje: webový hosting a podpora na telefonu</p>
         <hr>
-        <p>Provoz webu zdarma, změny obsahu provádním v sazbě <b>500 kč / hod práce</b></p>
+        <p>Provoz webu <strong>zdarma</strong>, změny obsahu provádním v sazbě <b>500 kč / hod práce</b></p>
       </div>
       <div class="polozka2">
         <h5>Web chci mít ve vlastích rukách</h5>
@@ -161,33 +183,31 @@
       <div class="reference clearfix">
         <h2>S&amp;M Profis s.r.o</h2>
         <h3>Čistírna oděvů</h3>
-        <img src="images/ref1.jpg">
+        <img src="images/showcase1.jpg">
       </div>
       <div class="reference-popis">
         <p>“Nové stránky jsou přehledné a zákazníci se v nich dobře orientují. S kvalitou práce jsem spokojená.”</p>
         <p style="font-weight:bold;">Magdalena Ulvrová</p>
         <a href="http://cistirna-plzen.cz">www.cistirna-plzen.cz</a>
-        <a class="btn-ghost" href="">Detail</a>
       </div>
 
+      <div class="reference clearfix">
+        <h2>S&amp;M Profis s.r.o</h2>
+        <h3>Čistírna oděvů</h3>
+        <img src="images/showcase1.jpg">
+      </div>
+      <div class="reference-popis">
+        <p>“Nové stránky jsou přehledné a zákazníci se v nich dobře orientují. S kvalitou práce jsem spokojená.”</p>
+        <p style="font-weight:bold;">Magdalena Ulvrová</p>
+        <a href="http://cistirna-plzen.cz">www.cistirna-plzen.cz</a>
+      </div>
 
-    <div class="reference clearfix">
-      <h2>S&amp;M Profis s.r.o</h2>
-      <h3>Čistírna oděvů</h3>
-      <img src="images/ref1.jpg">
-    </div>
-    <div class="reference-popis">
-      <p>“Nové stránky jsou přehledné a zákazníci se v nich dobře orientují. S kvalitou práce jsem spokojená.”</p>
-      <p style="font-weight:bold;">Magdalena Ulvrová</p>
-      <a href="#">www.cistirna-plzen.cz</a>
-      <a class="btn-ghost" href="#test">Detail</a>
-    </div>
 
   </section>
 
   <section id="cenik">
     <h1>Kolik mě to bude stát?</h1>
-    <p class="sluzby-c">Přesnou cenovou nabídku za tvorbu webových stránek vám dokážu vytvořit až na základě konkrétního zadání, ale pro představu mohu nabídnout následující orientační ceník. Jestli máte zájem o spočítání nabídky, neváhejte mě <a href="kontakt.html#hero-foto2">kontaktovat</a>.<p>
+    <p class="sluzby-c">Přesnou cenovou nabídku za tvorbu webových stránek vám dokážu vytvořit až na základě konkrétního zadání, ale pro představu mohu nabídnout následující orientační ceník. Jestli máte zájem o spočítání nabídky, neváhejte mě <a href="#hero-foto2">kontaktovat</a>.</p>
 
     <div class="polozka">
       <p>Webová vizitka</p>
@@ -197,7 +217,7 @@
     </div>
     <br>
     <div class="polozka">
-      <p>Profesní web</p>
+      <p>Profesní web&nbsp&nbsp&nbsp</p>
       <p>od 17 000 Kč</p><br>
       <hr>
       <p>Obsáhlejší webová prezentace slouží pro budování internetové identity. Součástí webu může být blog, jednoduchá e-komerce a další služby.</p>
@@ -206,7 +226,10 @@
     <h4 class="podpora">Podpora a správa webu</h4>
     <p>Stejně jak vy, se rozvíjí i vaše online prezentace. Protože každý má odlišné nároky na četnost a rozsah úprav, připravil jsem pro vás různé způsoby řešení <a class="btn-sprava" href="#">správy webu</a>.<p>
 
-    <h4 id="konzultace">Vkročte do online světa tou správnou nohou</h4>
+  </section>
+
+  <section id="konzultace">
+    <h2>Vykročte do online světa<br>tou správnou nohou</h2>
     <hr>
     <p class="konzultace-p">Chcete k vašemu podnikání využít internet, ale nevíte kde začít? Nebo jste si již web pořídili, ale nefunguje podle vašich představ? Pojďmě se sejít na nezávazné konzultaci. Za pouhých <strong>500 Kč/hod</strong> vás nasměruji k úspěšnému startu na internetu.
 
@@ -215,13 +238,47 @@
       <img src="images/arrow.svg"><li>poradím, jak z webových stránek vytěžit co nejvíce</li><br>
       <img src="images/arrow.svg"><li>doporučím nejvhodnější řešení právě pro vaše potřeby</li><br>
     </ul>
-
-    <a class="btn" href="kontakt.html#hero-foto2">Chci se sejít</a>
-    <a class="btn-ghost" href="kontakt.html#omne">Více o mně</a>
   </section>
 
-  <footer>
-    <p>Copyright &copy; 2016 Lukáš Frei</p>
+  <section id="kontakt">
+    <ul class="kontakty">
+      <h2>Pustíme se do toho?</h2>
+      <img src="images/kontakt-iphone.svg"><li>776 615 969</li><br>
+      <img src="images/kontakt-email.svg"><li><a href="mailto:lukas@web-agent.cz">lukas@web-agent.cz</a></li><br>
+      <img src="images/kontakt-linkedin.svg"><li><a href="http://cz.linkedin.com/in/lfrei">profesní profil</a></li><br>
+    </ul>
+    <img id="hero-foto2" src="images/hero-foto2.png">
+    <div class="kdojsem">
+      <h2>Kdo jsem</h2>
+      <div>
+        <p>Dítě informační doby</p>
+        <img src="images/omne1.jpg">
+        <p>Tempo stale se měnícího internetu držím neustalým sebevzděláváním. A to už pomocí kurzů a knih nebo účastí na různých školení a konferencí. Pomáhám s provozem <a href="#">WebExpo</a> - největší webové konference ve střední evropě.</p>
+      </div>
+      <div>
+        <p>Podnikavec</p>
+        <img src="images/omne2.jpg">
+        <p>Mam vášeň pro podnikání. Rád poznávám a spolupracuji s lidmi na volné noze. Také proto, jsem si oblíbil sdílený pracovní prostory (coworking). Jako například <a href="#">Depo2015</a> - centrum kreativního podnikání v Plzni.</p>
+      </div>
+      <div>
+        <p>Bojovník na cestě</p>
+        <img src="images/omne3.jpg">
+        <p>Zajímám se o východní kultůru. Ve svém životním postoji využívám fylozofie Budhizmu a Taoismu. Cvičím pozoruhodné bojové umnění Aikido. //Minimalizmus</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+
+    <ul id="mobile-nav">
+      <li><a class="active" href="#uvod">Úvod</a></li>
+      <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#projekty">Projekty</a></li>
+      <li><a href="#cenik">Ceník</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+
+    <p class="info">Místo podnikání:<br>Fibichova 7, Plzeň 323 00<br>IČ: 03775941<br><br>Zapsaný v živnostenském rejstříku<br>Magistrátu města Plzně od 4.2.2015<br>Č.j.: MMP/018836/16<br><br>Copyright &copy; 2016 Lukáš Frei</p>
   </footer>
 
   <script type="text/javascript" src="script/jquery-1.12.2.min.js"></script>

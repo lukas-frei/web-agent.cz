@@ -32,11 +32,13 @@ body {
 
 h1 {
   font-size: 43px;
+  line-height: 120%;
   margin: 20px 0;
 }
 
 h2 {
   font-size: 30px;
+  line-height: 120%;
   margin: 20px 0;
 }
 
@@ -135,7 +137,8 @@ nav ul li a:active {
 }
 
 .nav-sec a:link {
-  transition: 0s all;
+  transition: 5.0s color ease-out;
+  transition: 0s font-size;
 }
 
 /* ------------ nav ------------- */
@@ -156,8 +159,8 @@ nav {
   background-image: url("../images/nav-background.svg");
   background-size: cover;
   position: fixed;
-  width: 200px;
-  height: 700px;
+  width: 180px;
+  height: 620px;
   margin: -25px 0 0 70px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,9 +200,24 @@ nav li, nav .logo {
   font-size: 24px;
 }
 
-/* ------------------------------------- */
-/* ------------ index.html ------------- */
-/* ------------------------------------- */
+#mobile-menu {
+  display: none;
+}
+
+#mobile-nav {
+  display: none;
+  padding-bottom: 100px;
+}
+
+#mobile-nav li a:link,
+#mobile-nav li a:visited {
+  color: #E0E0E0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 250%;
+}
+
+/* ------------ uvod ------------- */
 #uvod {
   height: 100vh;
   overflow: hidden;
@@ -229,12 +247,6 @@ nav li, nav .logo {
   margin: 10px 0 0 25px;
 }
 
-.hero-foto {
-  float: right;
-  width: 300px;
-  margin-right: 150px;
-}
-
 /* ------------ sluzby ------------- */
 #sluzby {
   background-color: #FFF9F0;
@@ -249,6 +261,7 @@ nav li, nav .logo {
 .sluzby-p {
   max-width: 600px;
   margin-bottom: 30px;
+  padding-right: 30px;
 }
 
 .sluzby-icons {
@@ -270,6 +283,7 @@ nav li, nav .logo {
 
 .sluzby-text p {
   max-width: 500px;
+  padding-right: 30px;
 }
 
 /* ------------ sluzby-boxes ------------- */
@@ -277,6 +291,7 @@ nav li, nav .logo {
   display: none;
   width: 100%;
   padding: 10px 0 20px 0;
+  line-height: 220%;
 }
 
 .nav-sec svg {
@@ -286,10 +301,8 @@ nav li, nav .logo {
   margin-right: 5px;
 }
 
-a:hover > svg * {
-  fill: #FBB533;
-}
-
+/*a:hover > svg *
+  fill: $highlight */
 .nav-sec a {
   display: inline-block;
   padding-right: 15px;
@@ -303,8 +316,12 @@ a:hover > svg * {
 }
 
 #sluzby-spoluprace .box-obsah {
-  max-width: 40%;
+  width: 50%;
+  max-width: 400px;
   float: left;
+}
+
+#sluzby-spoluprace .box-obsah:first-of-type {
   padding-right: 5%;
 }
 
@@ -318,7 +335,8 @@ a:hover > svg * {
 }
 
 #sluzby-tech p {
-  padding: 10px 0;
+  padding: 10px 0px 10px 0;
+  width: 100%;
   max-width: 800px;
 }
 
@@ -327,18 +345,25 @@ a:hover > svg * {
 }
 
 #sluzby-tech video {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
+  width: 100%;
   max-width: 800px;
 }
 
 #sluzby-navstevnost p,
 #sluzby-navstevnost img {
-  padding: 10px 0;
+  padding: 10px 0 10px 0;
+  width: 100%;
   max-width: 800px;
 }
 
+#sluzby-navstevnost h5 {
+  padding-top: 20px;
+}
+
 #sluzby-sprava p {
-  padding: 10px 0;
+  padding: 10px 0 10px 0;
+  width: 100%;
   max-width: 800px;
 }
 
@@ -360,7 +385,7 @@ a:hover > svg * {
 /* ------------ projekty ------------- */
 #projekty {
   background-color: #FFD08A;
-  padding: 70px 0 30px 330px;
+  padding: 70px 0 60px 330px;
   overflow: hidden;
 }
 
@@ -379,14 +404,14 @@ a:hover > svg * {
 }
 
 .reference img {
-  width: 500px;
+  width: 50%;
   float: left;
 }
 
 .reference-popis {
-  max-width: 360px;
+  max-width: 320px;
   float: left;
-  padding: 0 30px 70px 50px;
+  padding: 0 20px;
 }
 
 .reference-popis p:first-of-type {
@@ -401,7 +426,7 @@ a:hover > svg * {
 /* ------------ cenik ------------- */
 #cenik {
   background-color: #FFF9F0;
-  padding: 70px 0 100px 330px;
+  padding: 70px 0 0 330px;
   overflow: hidden;
 }
 
@@ -436,18 +461,18 @@ a:hover > svg * {
 .polozka p:nth-of-type(2) {
   font-weight: 400;
   font-size: 18px;
-  float: right;
-  padding-right: 250px;
+  float: left;
+  padding-left: 15%;
 }
 
 .polozka hr {
-  width: 350px;
-  border: 1px solid #FBB533;
+  width: 60%;
+  border: 1px solid #FFD08A;
 }
 
 hr {
-  width: 540px;
-  border: 1px solid #FBB533;
+  width: 90%;
+  border: 1px solid #FFD08A;
 }
 
 .podpora {
@@ -455,7 +480,17 @@ hr {
 }
 
 #konzultace {
-  margin-top: 60px;
+  background-color: #FFF9F0;
+  padding: 30px 0 60px 330px;
+  overflow: hidden;
+}
+
+#konzultace p {
+  max-width: 550px;
+}
+
+#konzultace h2 {
+  font-size: 26px;
 }
 
 .konzultace-p {
@@ -464,7 +499,7 @@ hr {
 
 .konzultace-benefity {
   list-style: none;
-  margin-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .konzultace-benefity li {
@@ -476,68 +511,11 @@ hr {
   vertical-align: middle;
 }
 
-/* ------------ footer ------------- */
-footer {
-  background-color: #2D2C2A;
-  color: #E0E0E0;
-  text-align: center;
-  padding: 70px 0;
-}
-
-/* ------------------------------------- */
-/* ------------ kontakt.html ----------- */
-/* ------------------------------------- */
-/* ------------ o mne ----------- */
-#omne {
-  padding: 70px 0 150px 330px;
-  overflow: hidden;
-}
-
-#omne h2 {
-  margin: 0 0 30px 0;
-}
-
-#omne img {
-  width: 450px;
-  float: left;
-}
-
-#omne img:nth-of-type(2) {
-  margin-top: -30px;
-}
-
-#omne img:nth-of-type(3) {
-  margin-top: -30px;
-}
-
-.omne1 {
-  width: 380px;
-  float: left;
-  margin-left: 30px;
-  padding: 10px 0;
-}
-
-.omne2 {
-  width: 380px;
-  float: left;
-  margin-right: 30px;
-  padding: 20px 0;
-  clear: left;
-}
-
-.omne3 {
-  width: 380px;
-  float: left;
-  margin-left: 30px;
-  padding: 20px 0;
-}
-
 /* ------------ kontakt ----------- */
 #kontakt {
-  margin-top: 40px;
   padding: 70px 0 60px 330px;
-  overflow: hidden;
   background-color: #8FA1AE;
+  overflow: hidden;
 }
 
 .kontakty {
@@ -556,44 +534,49 @@ footer {
 }
 
 #hero-foto2 {
-  width: 400px;
-  position: absolute;
-  margin-top: -450px;
-  margin-left: 450px;
+  width: 35%;
+  margin-top: -30%;
+  float: right;
+  margin-right: 15%;
 }
 
-.otazky {
-  margin-top: 100px;
+.kdojsem {
+  margin-top: 120px;
 }
 
-.otazky h4 {
-  margin-bottom: 20px;
+.kdojsem h2 {
+  margin-bottom: 30px;
 }
 
-.otazky div {
-  width: 27%;
+.kdojsem div {
   float: left;
-  margin-right: 5%;
+  width: 30%;
+  margin-right: 3%;
+  margin-bottom: 3%;
 }
 
-.otazky div p:first-child {
+.kdojsem div p:first-child {
+  font-size: 18px;
   font-weight: 400;
   padding-bottom: 10px;
 }
 
-/* ------------ footer-kontakt----------- */
-footer {
-  overflow: hidden;
+.kdojsem img {
+  width: 100%;
 }
 
-.copy {
-  text-align: left;
-  padding: 110px 0 0 330px;
-  position: absolute;
+/* ------------ footer ------------- */
+footer {
+  background-color: #2D2C2A;
+  color: #E0E0E0;
+  text-align: center;
+  padding: 70px 0;
+  overflow: hidden;
+  font-size: 14px;
 }
 
 .info {
   float: right;
   text-align: right;
-  padding-right: 50px;
+  padding-right: 70px;
 }

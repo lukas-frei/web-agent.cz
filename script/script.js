@@ -1,11 +1,8 @@
 $(document).ready(function(){
 
+
   // Nav to scroll
-  $("#nav-index a:lt(4)").click(function(evn){
-      evn.preventDefault();
-      $('html,body').scrollTo(this.hash, this.hash);
-  });
-  $("#nav-kontakt a:gt(3)").click(function(evn){
+  $("#nav-index a").click(function(evn){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
@@ -15,6 +12,7 @@ $(document).ready(function(){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
+
 
   // a+href array
   var aChildren = $("nav li").children(); // find the a children of the list items
@@ -27,7 +25,6 @@ $(document).ready(function(){
       }
   };
 
-  //
   $(window).scroll(function(){
       var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
       var windowHeight = $(window).height(); // get the height of the window
@@ -45,6 +42,27 @@ $(document).ready(function(){
       }
 
   });
+
+
+  // horizontal nav offset
+  if (matchMedia) {
+  var mq = window.matchMedia("(max-width: 860px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+  }
+
+  function WidthChange(mq) {
+    if (mq.matches) {
+      $.extend($.scrollTo.defaults, {
+        offset: -100,
+      });
+    } else {
+      $.extend($.scrollTo.defaults, {
+        offset: 0,
+      });
+    }
+  }
+
 
   // nav-sec
   $(".btn-uvod").click(function(evn){
