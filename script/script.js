@@ -8,7 +8,11 @@ $(document).ready(function(){
   });
 
   // CTA to scroll
-  $(".btn-uvod").click(function(evn){
+  $(".btn").click(function(evn){
+      evn.preventDefault();
+      $('html,body').scrollTo(this.hash, this.hash);
+  });
+  $(".btn-ghost").click(function(evn){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });

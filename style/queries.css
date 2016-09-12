@@ -2,14 +2,7 @@
 /* ------------ desktop ------------- */
 @media (max-width: 1101px) {
   #uvod {
-    background-position: 92%;
-  }
-  .kdojsem div {
-    width: 45%;
-    margin-right: 5%;
-  }
-  .kdojsem div:last-child {
-    clear: both;
+    background-position: 92% d;
   }
 }
 
@@ -28,7 +21,8 @@
   #projekty,
   #cenik,
   #konzultace,
-  #kontakt {
+  #kontakt,
+  #omne {
     padding-left: 260px;
   }
   #projekty img {
@@ -38,10 +32,6 @@
   .reference-popis {
     max-width: 500px;
     padding: 0 40px 20px 0;
-  }
-  #hero-foto2 {
-    margin-right: 10%;
-    margin-top: -34%;
   }
 }
 
@@ -90,13 +80,9 @@
   #projekty,
   #cenik,
   #konzultace,
-  #kontakt {
+  #kontakt,
+  #omne {
     padding: 5% 10%;
-  }
-  #hero-foto2 {
-    width: 35%;
-    margin-top: -34%;
-    margin-right: 5%;
   }
 }
 
@@ -114,25 +100,17 @@
   .sluzby-text {
     padding: 0 0 20px 0;
   }
-  .kdojsem div {
-    width: 100%;
-  }
-  .kdojsem div:last-child {
-    clear: both;
-  }
-  .kdojsem p {
-    width: 90%;
-  }
-  .kdojsem img {
-    width: 80%;
-  }
   #sluzby,
   #projekty,
   #cenik,
   #konzultace,
-  #kontakt {
+  #kontakt,
+  #omne {
     padding: 5%;
     margin: 0 auto;
+  }
+  nav ul li {
+    padding-left: 5px;
   }
 }
 
@@ -214,22 +192,14 @@
     vertical-align: top;
     width: 5%;
   }
-  #hero-foto2 {
-    width: 35%;
-    margin-top: -36%;
-    margin-right: 5%;
+  #omne div {
+    width: 100%;
   }
-  .kdojsem {
-    margin-top: 60px;
+  #omne div img {
+    width: 80%;
   }
-  .kdojsem h2 {
-    margin-bottom: 10px;
-  }
-  .kdojsem div p:first-child {
-    margin-top: 20px;
-  }
-  .kdojsem img {
-    width: 90%;
+  #omne div p {
+    width: 80%;
   }
 }
 
@@ -253,6 +223,21 @@
   .polozka hr {
     width: 80%;
   }
+  hr {
+    width: 90%;
+  }
+  #omne h1 {
+    font-size: 30px;
+  }
+  #omne div {
+    width: 100%;
+  }
+  #omne div img {
+    width: 90%;
+  }
+  #omne div p {
+    width: 90%;
+  }
 }
 
 @media (max-width: 390px) {
@@ -268,6 +253,9 @@
   nav span {
     font-size: 17px;
   }
+  .title {
+    margin-top: 160px;
+  }
   .konzultace-benefity img {
     margin-top: 7px;
   }
@@ -279,13 +267,13 @@
     width: 50%;
     clear: left;
   }
-  #hero-foto2 {
-    width: 60%;
-  }
-  .kdojsem img {
+  #omne div {
     width: 100%;
   }
-  .kdojsem p {
+  #omne div img {
+    width: 100%;
+  }
+  #omne div p {
     width: 100%;
   }
 }
