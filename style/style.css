@@ -516,29 +516,29 @@ nav li, nav .logo {
   overflow: hidden;
 }
 
-#kontakt img {
-  margin-top: -5px;
-  width: 40px;
-  vertical-align: middle;
-}
-
-#kontakt #hero-foto2 {
-  padding-left: 40px;
-  margin-top: 10px;
-  float: left;
-  width: 300px;
-  margin-bottom: 20px;
-}
-
 #kontakt ul {
   list-style: none;
   float: left;
+}
+
+#kontakt ul img {
+  margin-top: -5px;
+  width: 40px;
+  vertical-align: middle;
 }
 
 #kontakt li {
   display: inline-block;
   padding: 20px;
   font-size: 20px;
+}
+
+.hero-foto2 {
+  padding-left: 40px;
+  margin-top: 20px;
+  float: left;
+  width: 280px;
+  margin-bottom: 20px;
 }
 
 /* ------------ O mně ----------- */
