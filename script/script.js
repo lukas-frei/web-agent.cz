@@ -20,6 +20,10 @@ $(document).ready(function(){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
+  $(".btn-down").click(function(evn){
+      evn.preventDefault();
+      $('html,body').scrollTo(this.hash, this.hash);
+  });
 
 
   // a+href array
