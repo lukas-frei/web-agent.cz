@@ -208,6 +208,7 @@
   #kontakt {
     display: flex;
     flex-flow: column;
+    flex-shrink: 0;
   }
   #kontakt ul {
     order: 2;
