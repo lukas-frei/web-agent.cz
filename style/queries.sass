@@ -80,6 +80,8 @@ $link2: #375C73
   #omne
     padding: 5% 10%
 
+  #konzultace a
+    margin-bottom: 20px
 
 /* ------------ horizontal nav ------------- */
 @media (max-width: 749px)
@@ -152,6 +154,12 @@ $link2: #375C73
   .sluzby-p
     padding-right: 0
 
+  #sluzby-uvod img
+    width: 150px
+  #sluzby-uvod h4
+    margin-top: -10px
+
+
   #sluzby-spoluprace .box-obsah
     width: 100%
 
@@ -184,6 +192,11 @@ $link2: #375C73
 
 /* ------------ mobile small ------------- */
 @media (max-width: 550px)
+
+  #uvod
+    background-image: linear-gradient(rgba(255,255,255,0) 30%, $background 45%), url("../images/hero-foto.jpg")
+    background-position: 52% 80px
+
   h1
     font-size: 38px
   h2
@@ -196,6 +209,8 @@ $link2: #375C73
       padding-top: 30px
       width: 50%
   .polozka hr
+    width: 80%
+  .polozka2 hr
     width: 80%
   hr
     width: 90%
@@ -216,17 +231,15 @@ $link2: #375C73
 
   .logo
     display: flex
-    flex-shrink: 0
     img
       order: 2
-      padding-left: 15%
+      padding-left: 20%
       flex-shrink: 0
     p
       font-size: 20px
       white-space: nowrap
-      text-overflow: ellipsis
-  nav span
-    font-size: 16px
+    span
+      font-size: 16px
 
   #mobile-menu
     padding: auto 0
