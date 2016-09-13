@@ -201,6 +201,12 @@
   #omne div p {
     width: 80%;
   }
+  .btn-down {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+  }
 }
 
 /* ------------ mobile small ------------- */
@@ -254,7 +260,7 @@
     font-size: 17px;
   }
   .title {
-    margin-top: 160px;
+    bottom: 10px;
   }
   .konzultace-benefity img {
     margin-top: 7px;

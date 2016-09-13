@@ -16,6 +16,10 @@ $(document).ready(function(){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
+  $(".btn-omne").click(function(evn){
+      evn.preventDefault();
+      $('html,body').scrollTo(this.hash, this.hash);
+  });
 
 
   // a+href array
@@ -50,7 +54,7 @@ $(document).ready(function(){
 
   // horizontal nav offset
   if (matchMedia) {
-  var mq = window.matchMedia("(max-width: 860px)");
+  var mq = window.matchMedia("(min-width: 651px) and (max-width: 860px)");
   mq.addListener(WidthChange);
   WidthChange(mq);
   }
@@ -113,18 +117,6 @@ $(document).ready(function(){
 
     $('.nav-sec > a').removeClass("active-sec");
     $(".nav-sec > .btn-navstevnost").addClass("active-sec");
-
-    $('html,body').scrollTo('#sluzby')
-  });
-
-  $(".btn-sprava").click(function(evn){
-    evn.preventDefault();
-    $('.box').css("display", "none");
-    $('#sluzby-sprava').css("display", "block");
-    $('.nav-sec').css("display", "block");
-
-    $('.nav-sec > a').removeClass("active-sec");
-    $(".nav-sec > .btn-sprava").addClass("active-sec");
 
     $('html,body').scrollTo('#sluzby')
   });

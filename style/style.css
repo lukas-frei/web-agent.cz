@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ------------ basic setup ------------- */
 * {
   margin: 0;
@@ -405,7 +406,7 @@ nav li, nav .logo {
   padding-bottom: 15px;
 }
 
-/* ------------ kontakt ----------- */
+/* ------------ Konzultace ----------- */
 #konzultace {
   background-color: #FFD08A;
   padding: 70px 0 90px 330px;
@@ -426,7 +427,7 @@ nav li, nav .logo {
 
 .konzultace-benefity {
   list-style: none;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .konzultace-benefity li {
@@ -438,7 +439,7 @@ nav li, nav .logo {
   vertical-align: middle;
 }
 
-/* ------------ cenik ------------- */
+/* ------------ Cenik ------------- */
 #cenik {
   background-color: #FFF9F0;
   padding: 70px 0 70px 330px;
@@ -452,7 +453,7 @@ nav li, nav .logo {
 .polozka {
   max-width: 590px;
   margin: 30px 0 15px 0;
-  border-left: 2px solid #FBB533;
+  border-left: 2px solid #FFD08A;
 }
 
 .polozka p {
@@ -475,14 +476,14 @@ nav li, nav .logo {
 
 .polozka hr {
   width: 60%;
-  border: 1px solid #FBB533;
+  border: 1px solid #FFD08A;
 }
 
 .polozka2 {
   margin: 30px 0 15px 0;
   padding: 10px 0;
   max-width: 600px;
-  border-left: 2px solid #FBB533;
+  border-left: 2px solid #FFD08A;
 }
 
 .polozka2 h5 {
@@ -499,16 +500,16 @@ nav li, nav .logo {
   margin: 10px 0 0 10px;
 }
 
-hr {
+.polozka2 hr {
   width: 500px;
-  border: 1px solid #FBB533;
+  border: 1px solid #FFD08A;
 }
 
 .podpora {
   margin-top: 50px;
 }
 
-/* ------------ kontakt ----------- */
+/* ------------ Kontakt ----------- */
 #kontakt {
   padding: 70px 0 100px 330px;
   background-color: #FFD08A;
@@ -522,12 +523,16 @@ hr {
 }
 
 #kontakt #hero-foto2 {
-  width: 200px;
+  padding-left: 40px;
+  margin-top: 10px;
+  float: left;
+  width: 300px;
   margin-bottom: 20px;
 }
 
 #kontakt ul {
   list-style: none;
+  float: left;
 }
 
 #kontakt li {
@@ -536,7 +541,7 @@ hr {
   font-size: 20px;
 }
 
-/* ------------ kontakt ----------- */
+/* ------------ O mně ----------- */
 #omne {
   padding: 70px 7% 100px 330px;
   background-color: #FFF9F0;
@@ -570,6 +575,10 @@ hr {
 }
 
 /* ------------ footer ------------- */
+.btn-down {
+  display: none;
+}
+
 footer {
   background-color: #2D2C2A;
   color: #E0E0E0;
