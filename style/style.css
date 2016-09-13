@@ -533,12 +533,17 @@ nav li, nav .logo {
   font-size: 20px;
 }
 
+.kontakt-wrapper {
+  max-width: 600px;
+}
+
 .hero-foto2 {
   padding-left: 40px;
   margin-top: 20px;
-  float: left;
+  float: right;
   width: 280px;
   margin-bottom: 20px;
+  align: middle;
 }
 
 /* ------------ O mně ----------- */
