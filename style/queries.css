@@ -252,6 +252,7 @@
   }
   .logo {
     display: flex;
+    flex-shrink: 0;
   }
   .logo img {
     order: 2;
@@ -266,6 +267,7 @@
   }
   #mobile-menu {
     padding: auto 0;
+    margin: 0;
   }
   .title {
     margin-top: 55%;
