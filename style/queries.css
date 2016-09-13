@@ -249,16 +249,23 @@
 @media (max-width: 390px) {
   nav {
     justify-content: space-around;
-    min-width: 320px;
+  }
+  .logo {
+    display: flex;
   }
   .logo img {
+    order: 2;
     padding-left: 15%;
+    flex-shrink: 0;
   }
   .logo p {
-    font-size: 22px;
+    font-size: 20px;
   }
   nav span {
-    font-size: 17px;
+    font-size: 16px;
+  }
+  #mobile-menu {
+    padding: auto 0;
   }
   .title {
     margin-top: 55%;
