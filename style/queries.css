@@ -320,7 +320,8 @@
     clear: left;
   }
   .hero-foto2 {
-    padding-left: 20px;
+    margin-left: 20px;
+    width: 220px;
   }
   #omne div {
     width: 100%;
