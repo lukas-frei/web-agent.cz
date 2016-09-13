@@ -261,6 +261,8 @@
   }
   .logo p {
     font-size: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   nav span {
     font-size: 16px;
