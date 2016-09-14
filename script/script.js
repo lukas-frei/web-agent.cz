@@ -131,7 +131,8 @@ $(document).ready(function(){
     jQuery.scrollDepth({
       elements: ['#sluzby', '#projekty', '#konzultace', '#cenik', '#kontakt', '#omne', 'footer'],
       percentage: false,
-      nonInteraction: false,
+      pixelDepth: false,
+      nonInteraction: false
     });
   });
 
