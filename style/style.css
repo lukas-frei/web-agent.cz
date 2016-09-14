@@ -236,13 +236,17 @@ nav li, nav .logo {
   margin: 250px 0 0 350px;
 }
 
+.title h1 {
+  margin-bottom: 10px;
+}
+
 .title h3 {
   padding-left: 25px;
   line-height: 160%;
 }
 
 .title .btn {
-  margin: 10px 0 0 25px;
+  margin: 20px 0 0 25px;
 }
 
 /* ------------ sluzby ------------- */
@@ -266,6 +270,10 @@ nav li, nav .logo {
   width: 120px;
   float: left;
   margin-top: 30px;
+}
+
+.sluzby-icons:last-of-type {
+  margin-top: 20px;
 }
 
 .sluzby-text {
@@ -308,9 +316,9 @@ nav li, nav .logo {
 
 #sluzby-spoluprace,
 #sluzby-tech,
-#sluzby-navstevnost,
-#sluzby-sprava {
+#sluzby-navstevnost {
   display: none;
+  padding-right: 5%;
 }
 
 #sluzby-spoluprace .box-obsah {
@@ -374,6 +382,10 @@ nav li, nav .logo {
 
 .reference {
   margin: 30px 0 60px 0;
+}
+
+.reference h1 {
+  margin-bottom: 10px;
 }
 
 .reference h2 {
@@ -448,6 +460,10 @@ nav li, nav .logo {
 
 #cenik p {
   max-width: 550px;
+}
+
+#cenik .sluzby-c {
+  max-width: 500px;
 }
 
 .polozka {

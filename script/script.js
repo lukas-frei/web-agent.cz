@@ -16,11 +16,11 @@ $(document).ready(function(){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
-  $(".btn-omne").click(function(evn){
+  $(".btn-kontakt").click(function(evn){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
-  $(".btn-down").click(function(evn){
+  $(".btn-omne").click(function(evn){
       evn.preventDefault();
       $('html,body').scrollTo(this.hash, this.hash);
   });
