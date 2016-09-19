@@ -232,6 +232,12 @@
     vertical-align: top;
     width: 5%;
   }
+  #kontakt h2 {
+    font-size: 24px;
+  }
+  #kontakt li {
+    font-size: 18px;
+  }
   .hero-foto2 {
     float: none;
     width: 260px;
