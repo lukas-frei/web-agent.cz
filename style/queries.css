@@ -303,7 +303,7 @@
   nav {
     display: block;
   }
-  a {
+  nav a {
     padding: auto 0;
     margin: 0;
     float: right;
