@@ -220,7 +220,7 @@ nav li, nav .logo {
   height: 100vh;
   overflow: hidden;
   background-image: linear-gradient(rgba(255, 255, 255, 0) 66%, #FFF9F0), url("../images/hero-foto.jpg");
-  background-position: 730px;
+  background-position: 85%;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
