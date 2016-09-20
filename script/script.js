@@ -25,6 +25,11 @@ $(document).ready(function(){
       $('html,body').scrollTo(this.hash, this.hash);
   });
 
+  $(".cenik-sprava").click(function(evn){
+    evn.preventDefault();
+    $('.polozka2').toggle();
+  });
+
 
   // a+href array
   var aChildren = $("nav li").children(); // find the a children of the list items
