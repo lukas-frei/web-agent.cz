@@ -1,4 +1,11 @@
 /* ------------ colors ------------- */
+/* ------------ hidef ------------- */
+@media (min-width: 1300px) {
+  #uvod {
+    background-position: 70%;
+  }
+}
+
 /* ------------ desktop ------------- */
 @media (max-width: 1101px) {
   #uvod {
